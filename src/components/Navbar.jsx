@@ -3,13 +3,19 @@ import { AppBar, Toolbar, Typography } from '@mui/material'
 import React from 'react'
 import HikingIcon from '@mui/icons-material/Hiking';
 
+const StyledToolbar = styled(Toolbar)({
+  display:"flex",
+  justifyContent:"space-between",
+});
+
 function Navbar() {
+  
   return (
     <AppBar position='sticky'>
-      <Toolbar>
+      <StyledToolbar>
         <Typography variant='h6' sx={{display:{xs:"none",sm:"block"}}}>SocioHike</Typography>
         <HikingIcon sx={{display:{xs:"block",sm:"none"}}}/>
-        </Toolbar>
+        </StyledToolbar>
     </AppBar>
   )
 }
