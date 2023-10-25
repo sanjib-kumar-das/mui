@@ -6,13 +6,12 @@ import AvatarGroup from "@mui/material/AvatarGroup";
 function Rightbar() {
   return (
     <Box
-      bgcolor=""
       flex={2}
       p={1}
       sx={{ display: { xs: "none", sm: "block" } }}
     >
       <Box position="fixed" width={350}>
-        <Typography variant="h6" fontWeight={300} color="initial" mt={3} mb={2}>
+        <Typography variant="h6" fontWeight={300} mt={3} mb={2} >
           Online Friends
         </Typography>
         <AvatarGroup max={7}>
@@ -29,7 +28,7 @@ function Rightbar() {
           <Avatar alt="Trevor Henderson" src="https://mui.com/static/images/avatar/10.jpg" />
         </AvatarGroup>
 
-        <Typography variant="h6" fontWeight={300} color="initial" mt={3} mb={2}>
+        <Typography variant="h6" fontWeight={300} mt={3} mb={2}>
           Uploaded Photos
         </Typography>
         <ImageList cols={3} gap={8}>
@@ -44,7 +43,7 @@ function Rightbar() {
           </ImageListItem>
         </ImageList>
 
-        <Typography variant="h6" fontWeight={300} color="initial" mt={3} mb={2}>
+        <Typography variant="h6" fontWeight={300} mt={3} mb={2}>
           Latest Conversations
         </Typography>
         <List sx={{ width: '100%', maxWidth: 360, bgcolor: 'background.paper' }}>

@@ -9,7 +9,7 @@ import SettingsIcon from '@mui/icons-material/Settings';
 import PersonOutlineIcon from '@mui/icons-material/PersonOutline';
 import Brightness4Icon from '@mui/icons-material/Brightness4';
 
-function Sidebar() {
+function Sidebar({mode, setMode}) {
   return (
       <Box  bgcolor="" flex={1} p={1} sx={{display:{xs:"none", sm:"block"}}}>
         <Box position="fixed">
@@ -82,7 +82,7 @@ function Sidebar() {
               <ListItemIcon>
                 <Brightness4Icon />
               </ListItemIcon>
-              <Switch defaultChecked />
+              <Switch defaultChecked onChange={e=>setMode(mode === "dark" ? "light" : "dark")}/>
             </ListItemButton>
           </ListItem>
           </List>
