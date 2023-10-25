@@ -1,4 +1,4 @@
-import { Box, List, ListItem, ListItemButton, ListItemIcon, ListItemText } from '@mui/material'
+import { Box, List, ListItem, ListItemButton, ListItemIcon, ListItemText, Switch } from '@mui/material'
 import React from 'react'
 import HomeIcon from '@mui/icons-material/Home';
 import LayersIcon from '@mui/icons-material/Layers';
@@ -7,12 +7,13 @@ import StorefrontIcon from '@mui/icons-material/Storefront';
 import Diversity1Icon from '@mui/icons-material/Diversity1';
 import SettingsIcon from '@mui/icons-material/Settings';
 import PersonOutlineIcon from '@mui/icons-material/PersonOutline';
-import SettingsBrightnessIcon from '@mui/icons-material/SettingsBrightness';
+import Brightness4Icon from '@mui/icons-material/Brightness4';
 
 function Sidebar() {
   return (
-      <Box bgcolor="" flex={1} p={1} sx={{display:{xs:"none", sm:"block"}}}>
-        <List>
+      <Box  bgcolor="" flex={1} p={1} sx={{display:{xs:"none", sm:"block"}}}>
+        <Box position="fixed">
+        <List >
           <ListItem disablePadding>
             <ListItemButton component="a" href='#home'>
               <ListItemIcon>
@@ -79,12 +80,13 @@ function Sidebar() {
           <ListItem disablePadding>
             <ListItemButton component="a" href='#appearance'>
               <ListItemIcon>
-                <SettingsBrightnessIcon />
+                <Brightness4Icon />
               </ListItemIcon>
-              <ListItemText primary="Appearance" />
+              <Switch defaultChecked />
             </ListItemButton>
           </ListItem>
           </List>
+          </Box>
       </Box>
   )
 }
