@@ -21,8 +21,7 @@ function Post() {
     <Card sx={{margin:3}}>
       <CardHeader
         avatar={
-          <Avatar sx={{ bgcolor: "red" }} aria-label="recipe">
-            R
+          <Avatar sx={{ bgcolor: "red" }} aria-label="recipe" src="https://mui.com/static/images/avatar/7.jpg">
           </Avatar>
         }
         action={
