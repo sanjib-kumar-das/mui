@@ -19,7 +19,7 @@ function Sidebar({mode, setMode}) {
               <ListItemIcon>
                 <HomeIcon />
               </ListItemIcon>
-              <ListItemText primary="Homepage" />
+              <ListItemText primary="Dashboard" />
             </ListItemButton>
           </ListItem>
 
@@ -29,33 +29,6 @@ function Sidebar({mode, setMode}) {
                 <LayersIcon />
               </ListItemIcon>
               <ListItemText primary="Pages" />
-            </ListItemButton>
-          </ListItem>
-
-          <ListItem disablePadding>
-            <ListItemButton component="a" href='#groups'>
-              <ListItemIcon>
-                <GroupIcon />
-              </ListItemIcon>
-              <ListItemText primary="Groups" />
-            </ListItemButton>
-          </ListItem>
-
-          <ListItem disablePadding>
-            <ListItemButton component="a" href='#marketplace'>
-              <ListItemIcon>
-                <StorefrontIcon />
-              </ListItemIcon>
-              <ListItemText primary="Marketplace" />
-            </ListItemButton>
-          </ListItem>
-
-          <ListItem disablePadding>
-            <ListItemButton component="a" href='#friends'>
-              <ListItemIcon>
-                <Diversity1Icon />
-              </ListItemIcon>
-              <ListItemText primary="Friends" />
             </ListItemButton>
           </ListItem>
 
